@@ -1,6 +1,24 @@
-dsòkcwv
-òad
-,varwò,MFLEKWàòLQàòLD
-V ,àL
-MA ,ç
-Là,
+
+
+#intest{
+  font-size: 0.9rem;
+}
+#intro{
+  font-size: 12vw;
+  line-height: 12.5vw;
+  font-family: 'Comfortaa', cursive;
+}
+#talk{
+  font-size: 5vw;
+  line-height: 7vw;
+  font-family: 'Manrope', sans-serif;
+}
+#shy{
+  background-color: black;
+  color:white;
+}
+#foot{
+  text-align:center;
+  font-size: 2vw;
+  font-family: 'Manrope', sans-serif;
+}

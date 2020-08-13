@@ -1,5 +1,10 @@
+a{
+  text-decoration:none;
+}
 
-
+a:hover{
+  text-decoration: none;
+}
 #intest{
   font-size: 0.9rem;
 }
@@ -9,16 +14,116 @@
   font-family: 'Manrope', sans-serif;
 }
 #talk{
-  font-size: 5vw;
-  line-height: 7vw;
+  font-size: 3vw;
+  line-height: 5vw;
   font-family: 'Manrope', sans-serif;
 }
 #shy{
   background-color: black;
   color:white;
 }
+
+#t-proj1{
+  font-size: 6vw;
+  line-height: 9vw;
+  font-family: 'Manrope', sans-serif;
+  cursor:pointer;
+  color:black;
+}
+
+#img-proj1{
+z-index:999;
+position: absolute;
+top:0%;
+right:20%;
+display:none;
+}
+
+#t-proj2{
+  font-size: 6vw;
+  line-height: 9vw;
+  font-family: 'Manrope', sans-serif;
+  cursor:pointer;
+  color:black;
+}
+
+#img-proj2{
+z-index:999;
+position: absolute;
+top:10%;
+right:20%;
+display:none;
+}
+
+#t-proj3{
+  font-size: 6vw;
+  line-height: 9vw;
+  font-family: 'Manrope', sans-serif;
+  cursor:pointer;
+  color:black;
+}
+
+#img-proj3{
+z-index:999;
+position: absolute;
+top:10%;
+right:20%;
+display:none;
+}
+
 #foot{
   text-align:center;
   font-size: 2vw;
   font-family: 'Manrope', sans-serif;
+}
+
+#insta{
+  cursor:pointer;
+  color:black;
+  text-decoration: none;
+}
+#git{
+  cursor:pointer;
+  color:black;
+  text-decoration: none;
+}
+#telegram{
+  cursor:pointer;
+  color:black;
+  text-decoration: none;
+}
+#twitter{
+  cursor:pointer;
+  color:black;
+  text-decoration: none;
+}
+
+
+
+.b-insta{
+  background-color: #E65737;
+  transition:0.3s;
+}
+.b-git{
+  background-color: #72348B;
+  transition:0.3s;
+}
+.b-telegram{
+  background-color: #7CB2F6;
+  transition:0.3s;
+}
+.b-twitter{
+  background-color: #4C9FEB;
+  transition:0.3s;
+}
+
+.an-link{
+color:black;
+transition:0.3s;
+}
+.an-link:hover{
+  background-color: black;
+  color:white;
+  text-decoration: none;
+  cursor:pointer;
 }

@@ -5,6 +5,30 @@ a{
 a:hover{
   text-decoration: none;
 }
+
+.an-link{
+background-image: linear-gradient(to top, black 50%, transparent 50%);
+background-size: 100% 200%;
+background-position: top;
+/* transition: background-position 0.5s ease-in-out; /** I've changed the time for demo purposes **/
+color: black;
+transition: 0.3s;
+}
+
+.an-link:hover{
+  background-position: bottom;
+  color:white;
+  cursor: pointer;
+}
+
+header{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index:20;
+}
+
 #intest{
   font-size: 0.9rem;
 }
@@ -23,53 +47,14 @@ a:hover{
   color:white;
 }
 
-#t-proj1{
-  font-size: 6vw;
-  line-height: 9vw;
+.t-proj {
+  font-size: 5.5vw;
+
   font-family: 'Manrope', sans-serif;
   cursor:pointer;
-  color:black;
+
 }
 
-#img-proj1{
-z-index:999;
-position: absolute;
-top:0%;
-right:20%;
-display:none;
-}
-
-#t-proj2{
-  font-size: 6vw;
-  line-height: 9vw;
-  font-family: 'Manrope', sans-serif;
-  cursor:pointer;
-  color:black;
-}
-
-#img-proj2{
-z-index:999;
-position: absolute;
-top:10%;
-right:20%;
-display:none;
-}
-
-#t-proj3{
-  font-size: 6vw;
-  line-height: 9vw;
-  font-family: 'Manrope', sans-serif;
-  cursor:pointer;
-  color:black;
-}
-
-#img-proj3{
-z-index:999;
-position: absolute;
-top:10%;
-right:20%;
-display:none;
-}
 
 #foot{
   text-align:center;
@@ -97,6 +82,17 @@ display:none;
   color:black;
   text-decoration: none;
 }
+#vimeo{
+  cursor:pointer;
+  color:black;
+  text-decoration: none;
+}
+
+#mail{
+  cursor:pointer;
+  color:black;
+  text-decoration: none;
+}
 
 
 
@@ -117,13 +113,12 @@ display:none;
   transition:0.3s;
 }
 
-.an-link{
-color:black;
-transition:0.3s;
+.b-vimeo{
+  background-color: #59B8E6;
+  transition:0.3s;
 }
-.an-link:hover{
-  background-color: black;
-  color:white;
-  text-decoration: none;
-  cursor:pointer;
+
+.b-mail{
+  background-color: #C55445;
+  transition:0.3s;
 }

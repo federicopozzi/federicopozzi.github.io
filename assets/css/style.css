@@ -61,7 +61,12 @@ header{
   font-size: 2vw;
   font-family: 'Manrope', sans-serif;
 }
-
+#foot2{
+  text-align:center;
+  font-size: 1vw;
+  font-family: 'Manrope', sans-serif;
+  color:black;
+}
 #insta{
   cursor:pointer;
   color:black;

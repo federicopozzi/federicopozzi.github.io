@@ -127,3 +127,34 @@ header{
   background-color: #C55445;
   transition:0.3s;
 }
+
+/* iphone */
+@media only screen and (max-width: 414px) {
+  .margin-mob-t{
+    padding-top: 8vh;
+  }
+  #intest{
+    font-size: 1.3rem;
+  }
+
+  #talk{
+    font-size: 4vw;
+    line-height: 3vw;
+    font-family: 'Manrope', sans-serif;
+  }
+
+  .icon-mob{
+    display: none;
+  }
+  #foot{
+    text-align:center;
+    font-size: 5vw;
+    font-family: 'Manrope', sans-serif;
+  }
+  #foot2{
+    text-align:center;
+    font-size: 5vw;
+    font-family: 'Manrope', sans-serif;
+    color:black;
+  }
+}

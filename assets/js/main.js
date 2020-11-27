@@ -1,32 +1,4 @@
 
-
-// $(function() {
-// $('#t-proj1').hover(function() {
-//     $('#img-proj1').fadeIn();
-// }, function() {
-//     $('#img-proj1').fadeOut();
-// });
-// });
-//
-// $(function() {
-// $('#t-proj2').hover(function() {
-//     $('#img-proj2').fadeIn();
-// }, function() {
-//     $('#img-proj2').fadeOut();
-// });
-// });
-//
-// $(function() {
-// $('#t-proj3').hover(function() {
-//     $('#img-proj3').fadeIn();
-// }, function() {
-//     $('#img-proj3').fadeOut();
-// });
-// });
-
-
-
-
 $("#insta").hover(
   function() {
     $("body").addClass('b-insta');

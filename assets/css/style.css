@@ -55,6 +55,9 @@ header{
 
 }
 
+.myPhoto{
+  cursor: url('./me.png'), auto;
+}
 
 #foot{
   text-align:center;

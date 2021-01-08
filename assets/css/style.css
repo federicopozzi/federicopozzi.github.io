@@ -130,7 +130,51 @@ header{
   background-color: #C55445;
   transition:0.3s;
 }
+/* ########## MARQUEE ########## */
+/* .marquee {
+  overflow: hidden;
+  --offset: 0vw;
+  --move-initial: calc(-5% + var(--offset));
+  --move-final: calc(-20% + var(--offset));
+}
 
+.marquee__inner {
+  width: fit-content;
+  display: flex;
+  transform: translate3d(var(--move-initial), 0, 0);
+  animation: marquee 5s linear infinite;
+  animation-play-state: paused;
+}
+
+.marquee span {
+  font-size: 5vw;
+  padding: 0 2vw;
+  font-family: 'Manrope', sans-serif;
+  cursor:pointer;
+}
+.t-proj:hover {
+  color:white;
+}
+
+.country span {
+  color: black;
+}
+
+.marquee__inner:hover {
+  animation-play-state: running;
+  cursor:context-menu;
+
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(var(--move-initial), 0, 0);
+  }
+
+  100% {
+    transform: translate3d(var(--move-final), 0, 0);
+  }
+} */
 /* iphone */
 @media only screen and (max-width: 414px) {
   .margin-mob-t{

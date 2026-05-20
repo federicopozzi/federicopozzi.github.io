@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Force)",
+      "Bash(Select-Object Name, PSIsContainer)",
+      "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\pozzi\\\\OneDrive - IMMAGINAZIONE E LAVORO\\\\Documenti\\\\GitHub\\\\federicopozzi.github.io\" -Recurse -File)",
+      "Bash(Select-Object FullName, Length)",
+      "Bash(Sort-Object FullName)",
+      "Bash(python3 -c ' *)",
+      "Bash(python3)",
+      "Bash(npx --yes svgo --version)",
+      "PowerShell(winget show *)",
+      "PowerShell(winget install *)",
+      "Bash(npx svgo *)"
+    ]
+  }
+}

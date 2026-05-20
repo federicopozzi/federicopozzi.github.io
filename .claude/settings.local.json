@@ -11,7 +11,16 @@
       "Bash(npx --yes svgo --version)",
       "PowerShell(winget show *)",
       "PowerShell(winget install *)",
-      "Bash(npx svgo *)"
+      "Bash(npx svgo *)",
+      "PowerShell(cd \"C:\\\\Users\\\\pozzi\\\\OneDrive - IMMAGINAZIONE E LAVORO\\\\Documenti\\\\GitHub\\\\federicopozzi.github.io\"; Add-Type -AssemblyName System.Drawing; $imgs = @\\('assets/img/sf1.webp','assets/img/sf2.webp','assets/img/sf3.png','assets/img/sf4.webp','assets/img/d1.png','assets/img/d2.png','assets/img/d3.jpg','assets/img/d4.jpg','assets/img/d5.jpg','assets/img/trama.webp','assets/img/cancellazione.webp','assets/img/ewallet_ewallet.webp','assets/img/viz1.jpg','assets/img/viz2.jpg','assets/img/viz3.jpg','assets/img/viz4.jpg','assets/img/cheaper01.png','assets/img/cheaper03.png','assets/img/cheaper04.png'\\); foreach\\($f in $imgs\\) { try { $bmp = [System.Drawing.Bitmap]::new\\($f\\); Write-Output \"$f $\\($bmp.Width\\) $\\($bmp.Height\\)\"; $bmp.Dispose\\(\\) } catch { Write-Output \"$f ERROR\" } })",
+      "PowerShell(magick identify *)",
+      "PowerShell(python -c \"from PIL import Image; import os; os.chdir\\(r'C:\\\\Users\\\\pozzi\\\\OneDrive - IMMAGINAZIONE E LAVORO\\\\Documenti\\\\GitHub\\\\federicopozzi.github.io'\\); imgs=['assets/img/sf1.webp','assets/img/sf2.webp','assets/img/sf4.webp','assets/img/trama.webp','assets/img/cancellazione.webp','assets/img/ewallet_ewallet.webp']; [print\\(f, Image.open\\(f\\).size\\) for f in imgs]\" 2>&1)",
+      "PowerShell(python -c \"import pypdf; print\\('pypdf ok', pypdf.__version__\\)\" 2>&1; python -c \"import pikepdf; print\\('pikepdf ok', pikepdf.__version__\\)\" 2>&1; python -c \"import fitz; print\\('pymupdf ok', fitz.__version__\\)\" 2>&1)",
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\pozzi\\\\OneDrive - IMMAGINAZIONE E LAVORO\\\\Documenti\\\\GitHub\\\\federicopozzi.github.io\\\\assets\\\\other\" | Select-Object Name, @{N='MB';E={[math]::Round\\($_.Length/1MB,1\\)}})",
+      "Bash(pip install *)",
+      "Bash(python *)",
+      "Bash(git checkout *)",
+      "Bash(winget search *)"
     ]
   }
 }

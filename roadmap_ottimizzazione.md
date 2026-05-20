@@ -32,9 +32,9 @@ Priorità e effort stimato per ogni intervento. Aggiornare questo file marcando 
 | 2.2 | Ottimizzare i JPG principali (target < 500 KB ciascuno): `viz1.jpg` 2.6MB, `w2.jpg` 2.4MB, `w7.jpg` 1.6MB, `viz2.jpg` 1.3MB, `viz3.jpg` 1.4MB | P1 | M | [x] |
 | 2.3 | Convertire `cover_general.gif` (2.8 MB) e `interaction.gif` (4.9 MB) in video MP4/WebM con autoplay muted loop, o in WebP animato | P1 | M | [x] |
 | 2.4 | Ottimizzare `ewallet.svg` (1.3 MB → target < 100 KB) con SVGO — ottenuto 376 KB (-71%) con precisione=1; il target 100 KB non è raggiungibile con SVGO su SVG a 596 path senza distorsione visiva | P2 | S | [x] |
-| 2.5 | Aggiungere `loading="lazy"` a tutte le immagini non above-the-fold (compatibile con UIKit `uk-img`, verificare comportamento) | P2 | S | [ ] |
-| 2.6 | Aggiungere attributi `width` e `height` espliciti su tutti i tag `<img>` dove mancano, per evitare layout shift (CLS) | P2 | S | [ ] |
-| 2.7 | Comprimere i PDF pesanti se possibile (priorità su `wireframe_juggle.pdf` 19.8 MB e `ewallet.pdf` 8.1 MB) | P3 | S | [ ] |
+| 2.5 | Aggiungere `loading="lazy"` a tutte le immagini non above-the-fold (compatibile con UIKit `uk-img`, verificare comportamento) | P2 | S | [x] |
+| 2.6 | Aggiungere attributi `width` e `height` espliciti su tutti i tag `<img>` dove mancano, per evitare layout shift (CLS) | P2 | S | [x] |
+| 2.7 | Comprimere i PDF pesanti se possibile (priorità su `wireframe_juggle.pdf` 19.8 MB e `ewallet.pdf` 8.1 MB) — `ewallet.pdf` ridotto 7.8→7.6MB; `wireframe_juggle.pdf` richiede Ghostscript (immagini già in JPEG/JPX, senza tool esterno impossibile ridurre ulteriormente) | P3 | S | [x] |
 
 ---
 
@@ -46,9 +46,9 @@ Priorità e effort stimato per ogni intervento. Aggiornare questo file marcando 
 | 3.1 | Rimuovere il doppio import jQuery: eliminato `jquery-1.11.1.min.js` (2012), mantenuto solo `jquery/3.4.1` | P1 | XS | [x] |
 | 3.2 | Rimuovere la libreria AOS (Animate On Scroll) da tutte le pagine: importata ma mai utilizzata (rimossi CSS e JS su tutti i 14 file) | P1 | S | [x] |
 | 3.3 | Aggiungere attributo `defer` a tutti i tag `<script>` non critici su tutte le 14 pagine | P1 | S | [x] |
-| 3.4 | Refactoring di `main.js`: ridurre i 109 righe di handler ripetuti a un loop su array `['insta','git','telegram','twitter','vimeo','mail']` (~10 righe finali) | P2 | S | [ ] |
-| 3.5 | Valutare sostituzione jQuery con vanilla JS: `main.js` usa solo `.hover()`, `.addClass()`, `.removeClass()` — tutto rimpiazzabile con `addEventListener('mouseenter/mouseleave')` e `classList` | P3 | M | [ ] |
-| 3.6 | Aggiungere `rel="preconnect"` per i domini CDN usati (googleapis, bootstrapcdn, jsdelivr, fontawesome) nel `<head>` di ogni pagina | P2 | S | [ ] |
+| 3.4 | Refactoring di `main.js`: ridurre i 109 righe di handler ripetuti a un loop su array `['insta','git','telegram','twitter','vimeo','mail']` (~10 righe finali) | P2 | S | [x] |
+| 3.5 | Valutare sostituzione jQuery con vanilla JS: `main.js` usa solo `.hover()`, `.addClass()`, `.removeClass()` — rimpiazzato con `addEventListener('mouseenter/mouseleave')` e `classList`; jQuery rimosso da tutti i 14 file HTML | P3 | M | [x] |
+| 3.6 | Aggiungere `rel="preconnect"` per i domini CDN usati (googleapis, bootstrapcdn, jsdelivr, fontawesome) nel `<head>` di ogni pagina | P2 | S | [x] |
 
 ---
 

@@ -57,9 +57,9 @@ Priorità e effort stimato per ogni intervento. Aggiornare questo file marcando 
 
 | # | Task | Priorità | Effort | Stato |
 |---|------|----------|--------|-------|
-| 4.1 | Rimuovere il blocco CSS commentato (34 righe marquee animation, linee 134–177 di style.css) che non viene mai usato | P3 | XS | [ ] |
+| 4.1 | Rimuovere il blocco CSS commentato (34 righe marquee animation, linee 134–177 di style.css) che non viene mai usato | P3 | XS | [x] |
 | 4.2 | Estratti i 34+ `style="margin:5px;"` inline degli `<hr>` in `hr { margin: 5px 0; }` in `style.css` | P3 | S | [x] |
-| 4.3 | Estrarre gli altri inline style ricorrenti (`style="height:50%"`, `style="background-color: #333;"`) in classi CSS | P3 | S | [ ] |
+| 4.3 | Estrarre gli altri inline style ricorrenti (`style="height:50%"`, `style="background-color: #333;"`) in classi CSS | P3 | S | [x] |
 | 4.4 | `font-display: swap` già presente nell'URL Google Fonts (`&display=swap`) su tutte le pagine | P2 | XS | [x] |
 | 4.5 | Aggiungere stack di fallback alle font-family (attualmente solo `sans-serif`, aggiungere font simili come `'Trebuchet MS', Arial`) | P3 | XS | [ ] |
 | 4.6 | Aggiungere breakpoint mancanti per tablet (768px) per migliorare la responsività intermedia | P3 | M | [ ] |

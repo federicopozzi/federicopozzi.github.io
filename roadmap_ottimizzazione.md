@@ -61,8 +61,8 @@ Priorità e effort stimato per ogni intervento. Aggiornare questo file marcando 
 | 4.2 | Estratti i 34+ `style="margin:5px;"` inline degli `<hr>` in `hr { margin: 5px 0; }` in `style.css` | P3 | S | [x] |
 | 4.3 | Estrarre gli altri inline style ricorrenti (`style="height:50%"`, `style="background-color: #333;"`) in classi CSS | P3 | S | [x] |
 | 4.4 | `font-display: swap` già presente nell'URL Google Fonts (`&display=swap`) su tutte le pagine | P2 | XS | [x] |
-| 4.5 | Aggiungere stack di fallback alle font-family (attualmente solo `sans-serif`, aggiungere font simili come `'Trebuchet MS', Arial`) | P3 | XS | [ ] |
-| 4.6 | Aggiungere breakpoint mancanti per tablet (768px) per migliorare la responsività intermedia | P3 | M | [ ] |
+| 4.5 | Aggiungere stack di fallback alle font-family (attualmente solo `sans-serif`, aggiungere font simili come `'Trebuchet MS', Arial`) | P3 | XS | [x] |
+| 4.6 | Aggiungere breakpoint mancanti per tablet (768px) per migliorare la responsività intermedia | P3 | M | [x] |
 | 4.7 | Sostituire i 6 ID selector `#insta`, `#git`, etc. con classi `.social-link[data-platform="insta"]` per migliore specificità | P4 | M | [ ] |
 
 ---
@@ -73,13 +73,13 @@ Priorità e effort stimato per ogni intervento. Aggiornare questo file marcando 
 | # | Task | Priorità | Effort | Stato |
 |---|------|----------|--------|-------|
 | 5.1 | Corretti `og:image` (URL assoluto) e `twitter:image` (era vuoto) su `index.html` | P1 | XS | [x] |
-| 5.2 | Aggiungere meta tag Open Graph (`og:title`, `og:description`, `og:image`, `og:url`) su tutte le pagine progetto | P2 | M | [ ] |
-| 5.3 | Aggiungere tag `<link rel="canonical">` su ogni pagina per evitare duplicate content | P2 | S | [ ] |
-| 5.4 | Creare `sitemap.xml` con tutte le 14 URL del sito | P2 | S | [ ] |
+| 5.2 | Aggiungere meta tag Open Graph (`og:title`, `og:description`, `og:image`, `og:url`) su tutte le pagine progetto | P2 | M | [x] |
+| 5.3 | Aggiungere tag `<link rel="canonical">` su ogni pagina per evitare duplicate content | P2 | S | [x] |
+| 5.4 | Creare `sitemap.xml` con tutte le 14 URL del sito | P2 | S | [x] |
 | 5.5 | Creato `robots.txt` con `User-agent: * / Allow: /` e riferimento alla sitemap | P2 | XS | [x] |
-| 5.6 | Uniformare i `<title>` di tutte le pagine al pattern `"Nome Progetto — Federico Pozzi"` | P2 | S | [ ] |
-| 5.7 | Aggiungere JSON-LD Schema.org `Person` su `index.html` e `CreativeWork` su ogni pagina progetto | P3 | M | [ ] |
-| 5.8 | Aggiungere meta `twitter:card` e `twitter:image` su tutte le pagine | P3 | S | [ ] |
+| 5.6 | Uniformare i `<title>` di tutte le pagine al pattern `"Nome Progetto — Federico Pozzi"` | P2 | S | [x] |
+| 5.7 | Aggiungere JSON-LD Schema.org `Person` su `index.html` e `CreativeWork` su ogni pagina progetto | P3 | M | [x] |
+| 5.8 | Aggiungere meta `twitter:card` e `twitter:image` su tutte le pagine | P3 | S | [x] |
 
 ---
 
@@ -91,6 +91,9 @@ Priorità e effort stimato per ogni intervento. Aggiornare questo file marcando 
 | 6.1 | Aggiungere testo `alt` descrittivo a tutte le immagini con `alt=""` o senza attributo alt (20+ immagini) | P2 | M | [ ] |
 | 6.2 | Aggiungere `aria-label` alle icone UIKit usate come pulsanti/link senza testo visibile | P3 | S | [ ] |
 | 6.3 | Verificare contrasto colore testo/sfondo con WCAG AA (specie `.an-link` e footer links) | P3 | S | [ ] |
+| 6.4 | Aggiungere skip navigation link ("Salta al contenuto") come primo elemento del `<body>` su tutte le pagine — WCAG 2.4.1 | P2 | S | [ ] |
+| 6.5 | Aggiungere stili `:focus-visible` espliciti per la navigazione da tastiera — WCAG 2.4.7 (attualmente il browser default potrebbe essere rimosso da Bootstrap/UIKit) | P3 | S | [ ] |
+| 6.6 | Aggiungere `@media (prefers-reduced-motion: reduce)` in `style.css` per bloccare i video autoplay (ex GIF, task 2.3) e qualsiasi animazione CSS per chi ha questa preferenza di sistema | P2 | XS | [ ] |
 
 ---
 
@@ -103,6 +106,8 @@ Priorità e effort stimato per ogni intervento. Aggiornare questo file marcando 
 | 7.2 | Aggiungere un `<link rel="preload">` per le immagini hero above-the-fold di ogni pagina | P3 | S | [ ] |
 | 7.3 | Implementare `srcset` e `sizes` per le immagini principali, servendo risoluzioni adeguate per mobile/desktop | P3 | L | [ ] |
 | 7.4 | Valutare aggiunta Service Worker per cache offline delle pagine e degli asset statici | P4 | L | [ ] |
+| 7.5 | Creare pagina `404.html` custom (GitHub Pages la usa automaticamente se presente nella root) — attualmente mostra la 404 generica di GitHub | P3 | S | [ ] |
+| 7.6 | Aggiungere `<meta name="theme-color">` nel `<head>` di tutte le pagine (colore barra browser su mobile Chrome/Safari) | P4 | XS | [ ] |
 
 ---
 
@@ -112,18 +117,18 @@ Priorità e effort stimato per ogni intervento. Aggiornare questo file marcando 
 Blocco 1 completo + 3.1 + 3.2 + 3.3 + 4.2 + 4.4 + 5.1 + 5.5  
 _Risolti: validità HTML su 14 file, dipendenze inutili (AOS, jQuery duplicato), render-blocking scripts, favicon, broken links, typo, og:image, robots.txt_
 
-### Fase 2 — Asset optimization (massimo impatto performance)
-Blocco 2 completo  
-_Tempo stimato: ~6–8 ore — riduzione stimata payload da ~116 MB a < 15 MB_
+### Fase 2 — Asset optimization ✅ COMPLETATA
+Blocco 2 completo + 3.4 + 3.5 + 3.6 + 4.1 + 4.3  
+_Risolti: conversione PNG→WebP, ottimizzazione JPG, GIF→video, SVGO su SVG, lazy loading, width/height, PDF compressi, refactoring main.js, jQuery rimosso, preconnect CDN, dead CSS rimosso, inline style estratti_
 
-### Fase 3 — SEO e meta completi
+### Fase 3 — SEO e meta completi ✅ COMPLETATA
 5.2 + 5.3 + 5.4 + 5.6 + 5.7 + 5.8  
-_Tempo stimato: ~3–4 ore_
+_Risolti: Open Graph su tutte le pagine, canonical, sitemap.xml, robots.txt, title uniformi, JSON-LD, twitter card/image_
 
-### Fase 4 — CSS e JS cleanup
-Blocco 3 (resto) + Blocco 4 (resto) + 6.1  
-_Tempo stimato: ~4–5 ore_
+### Fase 4 — CSS e accessibilità
+4.5 + 4.6 + 6.1 + 6.4 + 6.5 + 6.6  
+_Tempo stimato: ~4–5 ore (4.7 opzionale, P4)_
 
-### Fase 5 — Architettura e accessibilità avanzata
-Blocco 6 (resto) + Blocco 7  
+### Fase 5 — Architettura e rifinitura
+6.2 + 6.3 + 7.2 + 7.5 + 7.6 + (7.3 + 7.4 + 7.1 a discrezione)  
 _Tempo stimato: variabile, pianificare separatamente_

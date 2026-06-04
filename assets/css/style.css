@@ -39,12 +39,12 @@ header{
 #intro{
   font-size: 13vw;
   line-height: 13.5vw;
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Manrope', 'Trebuchet MS', Arial, sans-serif;
 }
 #talk{
   font-size: 3vw;
   line-height: 5vw;
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Manrope', 'Trebuchet MS', Arial, sans-serif;
 }
 #shy{
   background-color: black;
@@ -54,7 +54,7 @@ header{
 .t-proj {
   font-size: 5.5vw;
 
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Manrope', 'Trebuchet MS', Arial, sans-serif;
   cursor:pointer;
 
 }
@@ -66,12 +66,12 @@ header{
 #foot{
   text-align:center;
   font-size: 2vw;
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Manrope', 'Trebuchet MS', Arial, sans-serif;
 }
 #foot2{
   text-align:center;
   font-size: 1vw;
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Manrope', 'Trebuchet MS', Arial, sans-serif;
   color:black;
 }
 #insta{
@@ -139,6 +139,25 @@ header{
 .img-dark-bg { background-color: #333; }
 .img-padded-top { padding-top: 10vh; }
 
+/* tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #intro {
+    font-size: 10vw;
+    line-height: 11vw;
+  }
+  #foot {
+    font-size: 2.5vw;
+  }
+  #foot2 {
+    font-size: 2vw;
+  }
+  /* footer social links: 3 per row instead of stacking */
+  #foot > div {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+}
+
 /* iphone */
 @media only screen and (max-width: 414px) {
   .margin-mob-t{
@@ -151,7 +170,7 @@ header{
   #talk{
     font-size: 4vw;
     line-height: 3vw;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Manrope', 'Trebuchet MS', Arial, sans-serif;
   }
 
   .icon-mob{
@@ -160,12 +179,12 @@ header{
   #foot{
     text-align:center;
     font-size: 5vw;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Manrope', 'Trebuchet MS', Arial, sans-serif;
   }
   #foot2{
     text-align:center;
     font-size: 5vw;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Manrope', 'Trebuchet MS', Arial, sans-serif;
     color:black;
   }
 }
